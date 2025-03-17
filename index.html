@@ -12,46 +12,92 @@
     />
   </head>
   <body class="bg-black">
+    <header>
+      <img src="./Netflix-assets/assets/netflix_logo.png" width="10%" />
+    </header>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <header>
-      <img src="./Netflix-assets/assets/netflix_logo.png" width="10%" />
-    </header>
-    <main class="container bg-black align-items-center px-5 py-5 ps-5">
-      <div class="container bg-black d-flex flex-column py-5 ps-5">
-        <h1 class="text-light">Edit Profile</h1>
-        <div class="text-secondary w-75">
-          <hr />
+    <div class="container">
+      <div class="text-center text-lg-start bg-light bg-black p-5 pt-4 mt-5">
+        <h1 class="col-12 col-sm-12 col-md-12 col-lg-12  d-inline-block text-light 
+        "> Edit Profile</h1>
+        <div class="text-secondary mb-0 ">
+          <hr width="110%"/>
         </div>
       </div>
-      <div
-        class="container bg-black text-light d-flex flex-column align-items-center py-5"
-      >
-        <div class="container d-flex justify-content-start ms-4">
-          <img src="./Netflix-assets/assets/stark_esports_logo.jpg" />
-          <div>
-            <input
-              class="form-control form-control-lg ms-5 d-flex align-items-center bg-secondary border-0 rounded-0"
-              type="text"
-              placeholder="Strive Student"
-              aria-label="default input example"
-            />
-          </div>
-        </div>
-        <button
-          type="button"
-          class="btn btn-outline-secondary mb-4"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Contattaci
-        </button>
-
-        <span>© 2021 Kalina Travel LTD. All Rights Reserved.</span>
-      </div>
-    </main>
-  </body>
-</html>
+    </div>
+        <div class="container">
+            <div class="row">
+            
+                <div class="col d-flex mt-0">
+                    <div>
+                    <img
+                    src="./Netflix-assets/assets/stark_esports_logo.jpg"
+                   
+                  />
+                </div>
+                <div class="container">
+                  <div class="row ">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center ">
+                      <select class="form-select text-white bg-secondary rounded-0 border-0 fs-3 ms-3" aria-label="Default select example">
+                        <option selected>Strive Student</option>
+                        <option value="1">Worker</option>
+                       
+                      </select>
+                    </div>
+                    <h2 class="mt-5 text-secondary-emphasis ms-3">Language:</h2>
+                    <div class="dropdown show ">
+                      <a class=" w-25 d-inline-flex  btn btn-secondary btn-lg  btn-secondary btn-lg dropdown-toggle ms-3 mt-2 rounded-0 border-light bg-black " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        English
+                      </a>
+                    </div>
+                    <div class="text-secondary mb-0 ms-3 mt-3">
+                      <hr width="105%"/>
+                    </div>
+                    <h2 class="ms-3  mt-4">Maturity Settings:</h2>
+                    <div class="w-50 ms-4 mt-3 text-light d-flex justify-content-center h-100 bg-dark fs-3">
+                   ALL MATURITY RATINGS
+                    </div> 
+                     <p class="text-secondary fs-4  mt-3 ms-3">Show titles of all maturity ratings for this profile.</p>
+                    </select> 
+                  </div>         
+                  <button type="button" class=" btn btn-secondary btn-lg bg-black mt-2 ms-3 mb-4 fs-3 rounded-0 text-secondary-emphasis border-dark">E D I T</button>
+                  <div class="text-secondary mb-0 ms-3 mt-3">
+                    <hr width="105%"/>
+                  </div>
+                  <h2 class="ms-3 ">Autoplay controls</h2>
+                  <div class="form-check ms-5 mt-3">
+                    <input class="form-check-input rounded-0 bg-black border-dark fs-2 " type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label  fs-3" for="flexCheckDefault">
+                      Autoplay next episode in a series on all devices.
+                    </label>
+                  </div>
+                  <div class="form-check ms-5">
+                    <input class="form-check-input  rounded-0 bg-black border-dark fs-2 " type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label  fs-3" for="flexCheckChecked">
+                      Autoplay previews while browsing on all devices.
+                    </label>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <div class="text-center text-lg-start bg-light bg-black p-5 pt-4 mt-5">
+              <div class="text-secondary mb-5 ">
+                <hr width="110%"/> 
+              </div>   
+              <div class="container">
+                <div class="row ">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-12 d-flex justify-content-evenly  ms-3 ">
+                          <button type="button" class=" btn-light text-dark fw-bold rounded-0 fs-4 " >SAVE</button>
+                          <button type="button" class="  btn bg-black border-secondary rounded-0text-secondary-emphasis fw-bold fs-5 rounded-0 " >CANCEL</button>
+                          <button type="button" class="  btn bg-black btn bg-black border-secondary rounded-0 text-secondary-emphasis fw-bold fs-5 ">DELETE PROFILE</button>
+                    </div>
+                </div>
+               </div> 
+               
+              </body>
+            </html>
+           
